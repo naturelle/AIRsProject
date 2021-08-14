@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root {
+  --column-fixed-width: 150px; 
+}
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+
+a{
+  color: black !important;
+  font-weight: bold;
+}
+
+.mycard {
+ 
+}
+.mycard h3 {
+  margin:0 auto;
+}
+
+.auth-card {
+  
+  padding: 20px;
+  text-align: center ;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.input-field {
+  margin:10px auto;
+  max-width:900px;
+  padding:10px;
+  display: flex;
+  flex-wrap: wrap ;
+}
+
+.text-field {
+  margin:10px auto;
+  max-width:1000px;
+  padding:10px;
+
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid rgb(8, 71, 243) !important;
+  box-shadow: 0 1px 0 0 rgb(8, 71, 243) !important;
+}
+
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid rgb(8, 71, 243) !important;
+  box-shadow: 0 1px 0 0 rgb(8, 71, 243) !important;
+}
+
+.input-field input[type=file]:focus {
+
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+
+.scroll {
+  width: calc(100% - var(--column-fixed-width));
+  overflow: auto;
+}
+
+table.striped > tbody > tr:nth-child(odd) {
+ 
+  background-color: rgba(170, 213, 213, 0.5);
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+
+#table {
+  font-family: "Quicksand";
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  border-spacing: 30px !important;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th, tfoot td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4ccc50;
+  color: white;
+}
+.app {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+ nav{
+  position: sticky;
+  top: 0;
+  /* height: 50px; */
+  z-index: 9999;
+  width: 100%;
+ 
+  background-color: gray ;
+}
+ 
+
+.singlePostEdit {
+  float: right;
+  font-size: 16px;
+}
+
+.singlePostIcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+  color: teal;
+}
+
+.singlePostIcon:last-child {
+  color: tomato;
+}
